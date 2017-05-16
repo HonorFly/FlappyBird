@@ -1,5 +1,6 @@
 
 define(function (require, exports, module) {
+    module.exports = Land;
        // 天空的构造函数
         function Land(img, x) {
             this.img = img;
@@ -18,5 +19,5 @@ define(function (require, exports, module) {
         Land.prototype.draw = function () {
             ctx.drawImage(this.img, this.x, 600-112);
         };
-    module.exports = Land;
+
 })
